@@ -3,12 +3,11 @@ package main
 import (
 	"context"
 	"fmt"
-	"learncoredemo/framework"
 	"log"
 	"time"
 )
 
-func FooControllerHandler(c *framework.Context) error {
+func FooControllerHandler(c *gin.Context) error {
 	finish := make(chan struct{}, 1)
 	panicChan := make(chan interface{}, 1)
 
@@ -24,7 +23,7 @@ func FooControllerHandler(c *framework.Context) error {
 		}()
 		// Do real action
 		time.Sleep(10 * time.Second)
-		c.SetOkStatus().Json("ok")
+		c.ISetOkStatus().IJson("ok")
 
 		finish <- struct{}{}
 	}()

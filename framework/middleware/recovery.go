@@ -1,6 +1,8 @@
 package middleware
 
-import "learncoredemo/framework"
+import (
+	"github.com/yanshinian/learncoredemo/framework"
+)
 
 // recovery机制，将协程中的函数异常进行捕获
 func Recovery() framework.ControllerHandler {

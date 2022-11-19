@@ -4,13 +4,13 @@
 
 [![Build Status](https://travis-ci.org/gin-gonic/gin.svg)](https://travis-ci.org/gin-gonic/gin)
 [![codecov](https://codecov.io/gh/gin-gonic/gin/branch/master/graph/badge.svg)](https://codecov.io/gh/gin-gonic/gin)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gin-gonic/gin)](https://goreportcard.com/report/github.com/gin-gonic/gin)
-[![GoDoc](https://pkg.go.dev/badge/github.com/gin-gonic/gin?status.svg)](https://pkg.go.dev/github.com/gin-gonic/gin?tab=doc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/yanshinian/learncoredemo/framework/gin)](https://goreportcard.com/report/github.com/yanshinian/learncoredemo/framework/gin)
+[![GoDoc](https://pkg.go.dev/badge/github.com/yanshinian/learncoredemo/framework/gin?status.svg)](https://pkg.go.dev/github.com/yanshinian/learncoredemo/framework/gin?tab=doc)
 [![Join the chat at https://gitter.im/gin-gonic/gin](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gin-gonic/gin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Sourcegraph](https://sourcegraph.com/github.com/gin-gonic/gin/-/badge.svg)](https://sourcegraph.com/github.com/gin-gonic/gin?badge)
+[![Sourcegraph](https://sourcegraph.com/github.com/yanshinian/learncoredemo/framework/gin/-/badge.svg)](https://sourcegraph.com/github.com/yanshinian/learncoredemo/framework/gin?badge)
 [![Open Source Helpers](https://www.codetriage.com/gin-gonic/gin/badges/users.svg)](https://www.codetriage.com/gin-gonic/gin)
-[![Release](https://img.shields.io/github/release/gin-gonic/gin.svg?style=flat-square)](https://github.com/gin-gonic/gin/releases)
-[![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/gin-gonic/gin)](https://www.tickgit.com/browse?repo=github.com/gin-gonic/gin)
+[![Release](https://img.shields.io/github/release/gin-gonic/gin.svg?style=flat-square)](https://github.com/yanshinian/learncoredemo/framework/gin/releases)
+[![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/yanshinian/learncoredemo/framework/gin)](https://www.tickgit.com/browse?repo=github.com/yanshinian/learncoredemo/framework/gin)
 
 Gin is a web framework written in Go (Golang). It features a martini-like API with performance that is up to 40 times faster thanks to [httprouter](https://github.com/julienschmidt/httprouter). If you need performance and good productivity, you will love Gin.
 
@@ -87,13 +87,13 @@ To install Gin package, you need to install Go and set your Go workspace first.
 1. The first need [Go](https://golang.org/) installed (**version 1.12+ is required**), then you can use the below Go command to install Gin.
 
 ```sh
-$ go get -u github.com/gin-gonic/gin
+$ go get -u github.com/yanshinian/learncoredemo/framework/gin
 ```
 
 2. Import it in your code:
 
 ```go
-import "github.com/gin-gonic/gin"
+import "github.com/yanshinian/learncoredemo/framework/gin"
 ```
 
 3. (Optional) Import `net/http`. This is required for example if using constants such as `http.StatusOK`.
@@ -112,7 +112,7 @@ $ cat example.go
 ```go
 package main
 
-import "github.com/gin-gonic/gin"
+import "github.com/yanshinian/learncoredemo/framework/gin"
 
 func main() {
 	r := gin.Default()
@@ -192,7 +192,7 @@ $ go build -tags=jsoniter .
 
 ## API Examples
 
-You can find a number of ready-to-run examples at [Gin examples repository](https://github.com/gin-gonic/examples).
+You can find a number of ready-to-run examples at [Gin examples repository](https://github.com/yanshinian/learncoredemo/framework/examples).
 
 ### Using GET, POST, PUT, PATCH, DELETE and OPTIONS
 
@@ -354,7 +354,7 @@ ids: map[b:hello a:1234]; names: map[second:tianou first:thinkerou]
 
 #### Single file
 
-References issue [#774](https://github.com/gin-gonic/gin/issues/774) and detail [example code](https://github.com/gin-gonic/examples/tree/master/upload-file/single).
+References issue [#774](https://github.com/yanshinian/learncoredemo/framework/gin/issues/774) and detail [example code](https://github.com/gin-gonic/examples/tree/master/upload-file/single).
 
 `file.Filename` **SHOULD NOT** be trusted. See [`Content-Disposition` on MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition#Directives) and [#1693](https://github.com/gin-gonic/gin/issues/1693)
 

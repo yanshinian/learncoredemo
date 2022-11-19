@@ -4,83 +4,83 @@
 
 ### BUGFIXES
 
-* fix level 1 router match [#2767](https://github.com/gin-gonic/gin/issues/2767), [#2796](https://github.com/gin-gonic/gin/issues/2796)
+* fix level 1 router match [#2767](https://github.com/yanshinian/learncoredemo/framework/gin/issues/2767), [#2796](https://github.com/yanshinian/learncoredemo/framework/gin/issues/2796)
 
 ## Gin v1.7.2
 
 ### BUGFIXES
 
-* Fix conflict between param and exact path [#2706](https://github.com/gin-gonic/gin/issues/2706). Close issue [#2682](https://github.com/gin-gonic/gin/issues/2682) [#2696](https://github.com/gin-gonic/gin/issues/2696).
+* Fix conflict between param and exact path [#2706](https://github.com/yanshinian/learncoredemo/framework/gin/issues/2706). Close issue [#2682](https://github.com/yanshinian/learncoredemo/framework/gin/issues/2682) [#2696](https://github.com/yanshinian/learncoredemo/framework/gin/issues/2696).
 
 ## Gin v1.7.1
 
 ### BUGFIXES
 
-* fix: data race with trustedCIDRs from [#2674](https://github.com/gin-gonic/gin/issues/2674)([#2675](https://github.com/gin-gonic/gin/pull/2675))
+* fix: data race with trustedCIDRs from [#2674](https://github.com/yanshinian/learncoredemo/framework/gin/issues/2674)([#2675](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2675))
 
 ## Gin v1.7.0
 
 ### BUGFIXES
 
-* fix compile error from [#2572](https://github.com/gin-gonic/gin/pull/2572) ([#2600](https://github.com/gin-gonic/gin/pull/2600))
-* fix: print headers without Authorization header on broken pipe ([#2528](https://github.com/gin-gonic/gin/pull/2528))
-* fix(tree): reassign fullpath when register new node ([#2366](https://github.com/gin-gonic/gin/pull/2366))
+* fix compile error from [#2572](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2572) ([#2600](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2600))
+* fix: print headers without Authorization header on broken pipe ([#2528](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2528))
+* fix(tree): reassign fullpath when register new node ([#2366](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2366))
 
 ### ENHANCEMENTS
 
-* Support params and exact routes without creating conflicts ([#2663](https://github.com/gin-gonic/gin/pull/2663))
-* chore: improve render string performance ([#2365](https://github.com/gin-gonic/gin/pull/2365))
-* Sync route tree to httprouter latest code ([#2368](https://github.com/gin-gonic/gin/pull/2368))
-* chore: rename getQueryCache/getFormCache to initQueryCache/initFormCa ([#2375](https://github.com/gin-gonic/gin/pull/2375))
-* chore(performance): improve countParams ([#2378](https://github.com/gin-gonic/gin/pull/2378))
-* Remove some functions that have the same effect as the bytes package ([#2387](https://github.com/gin-gonic/gin/pull/2387))
-* update:SetMode function ([#2321](https://github.com/gin-gonic/gin/pull/2321))
-* remove a unused type SecureJSONPrefix ([#2391](https://github.com/gin-gonic/gin/pull/2391))
-* Add a redirect sample for POST method ([#2389](https://github.com/gin-gonic/gin/pull/2389))
-* Add CustomRecovery builtin middleware ([#2322](https://github.com/gin-gonic/gin/pull/2322))
-* binding: avoid 2038 problem on 32-bit architectures ([#2450](https://github.com/gin-gonic/gin/pull/2450))
-* Prevent panic in Context.GetQuery() when there is no Request ([#2412](https://github.com/gin-gonic/gin/pull/2412))
-* Add GetUint and GetUint64 method on gin.context ([#2487](https://github.com/gin-gonic/gin/pull/2487))
-* update content-disposition header to MIME-style ([#2512](https://github.com/gin-gonic/gin/pull/2512))
-* reduce allocs and improve the render `WriteString` ([#2508](https://github.com/gin-gonic/gin/pull/2508))
-* implement ".Unwrap() error" on Error type ([#2525](https://github.com/gin-gonic/gin/pull/2525)) ([#2526](https://github.com/gin-gonic/gin/pull/2526))
-* Allow bind with a map[string]string ([#2484](https://github.com/gin-gonic/gin/pull/2484))
-* chore: update tree ([#2371](https://github.com/gin-gonic/gin/pull/2371))
-* Support binding for slice/array obj [Rewrite] ([#2302](https://github.com/gin-gonic/gin/pull/2302))
-* basic auth: fix timing oracle ([#2609](https://github.com/gin-gonic/gin/pull/2609))
-* Add mixed param and non-param paths (port of httprouter[#329](https://github.com/gin-gonic/gin/pull/329)) ([#2663](https://github.com/gin-gonic/gin/pull/2663))
-* feat(engine): add trustedproxies and remoteIP ([#2632](https://github.com/gin-gonic/gin/pull/2632))
+* Support params and exact routes without creating conflicts ([#2663](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2663))
+* chore: improve render string performance ([#2365](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2365))
+* Sync route tree to httprouter latest code ([#2368](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2368))
+* chore: rename getQueryCache/getFormCache to initQueryCache/initFormCa ([#2375](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2375))
+* chore(performance): improve countParams ([#2378](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2378))
+* Remove some functions that have the same effect as the bytes package ([#2387](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2387))
+* update:SetMode function ([#2321](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2321))
+* remove a unused type SecureJSONPrefix ([#2391](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2391))
+* Add a redirect sample for POST method ([#2389](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2389))
+* Add CustomRecovery builtin middleware ([#2322](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2322))
+* binding: avoid 2038 problem on 32-bit architectures ([#2450](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2450))
+* Prevent panic in Context.GetQuery() when there is no Request ([#2412](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2412))
+* Add GetUint and GetUint64 method on gin.context ([#2487](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2487))
+* update content-disposition header to MIME-style ([#2512](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2512))
+* reduce allocs and improve the render `WriteString` ([#2508](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2508))
+* implement ".Unwrap() error" on Error type ([#2525](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2525)) ([#2526](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2526))
+* Allow bind with a map[string]string ([#2484](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2484))
+* chore: update tree ([#2371](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2371))
+* Support binding for slice/array obj [Rewrite] ([#2302](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2302))
+* basic auth: fix timing oracle ([#2609](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2609))
+* Add mixed param and non-param paths (port of httprouter[#329](https://github.com/yanshinian/learncoredemo/framework/gin/pull/329)) ([#2663](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2663))
+* feat(engine): add trustedproxies and remoteIP ([#2632](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2632))
 
 ## Gin v1.6.3
 
 ### ENHANCEMENTS
 
-  * Improve performance: Change `*sync.RWMutex` to `sync.RWMutex` in context. [#2351](https://github.com/gin-gonic/gin/pull/2351)
+  * Improve performance: Change `*sync.RWMutex` to `sync.RWMutex` in context. [#2351](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2351)
 
 ## Gin v1.6.2
 
 ### BUGFIXES
-  * fix missing initial sync.RWMutex [#2305](https://github.com/gin-gonic/gin/pull/2305)
+  * fix missing initial sync.RWMutex [#2305](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2305)
 ### ENHANCEMENTS
-  * Add set samesite in cookie. [#2306](https://github.com/gin-gonic/gin/pull/2306)
+  * Add set samesite in cookie. [#2306](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2306)
 
 ## Gin v1.6.1
 
 ### BUGFIXES
-  * Revert "fix accept incoming network connections" [#2294](https://github.com/gin-gonic/gin/pull/2294)
+  * Revert "fix accept incoming network connections" [#2294](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2294)
 
 ## Gin v1.6.0
 
 ### BREAKING
-  * chore(performance): Improve performance for adding RemoveExtraSlash flag [#2159](https://github.com/gin-gonic/gin/pull/2159)
-  * drop support govendor [#2148](https://github.com/gin-gonic/gin/pull/2148)
-  * Added support for SameSite cookie flag [#1615](https://github.com/gin-gonic/gin/pull/1615)
+  * chore(performance): Improve performance for adding RemoveExtraSlash flag [#2159](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2159)
+  * drop support govendor [#2148](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2148)
+  * Added support for SameSite cookie flag [#1615](https://github.com/yanshinian/learncoredemo/framework/gin/pull/1615)
 ### FEATURES
-  * add yaml negotiation [#2220](https://github.com/gin-gonic/gin/pull/2220)
-  * FileFromFS [#2112](https://github.com/gin-gonic/gin/pull/2112)
+  * add yaml negotiation [#2220](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2220)
+  * FileFromFS [#2112](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2112)
 ### BUGFIXES
-  * Unix Socket Handling [#2280](https://github.com/gin-gonic/gin/pull/2280)
-  * Use json marshall in context json to fix breaking new line issue. Fixes #2209 [#2228](https://github.com/gin-gonic/gin/pull/2228)
+  * Unix Socket Handling [#2280](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2280)
+  * Use json marshall in context json to fix breaking new line issue. Fixes #2209 [#2228](https://github.com/yanshinian/learncoredemo/framework/gin/pull/2228)
   * fix accept incoming network connections [#2216](https://github.com/gin-gonic/gin/pull/2216)
   * Fixed a bug in the calculation of the maximum number of parameters [#2166](https://github.com/gin-gonic/gin/pull/2166)
   * [FIX] allow empty headers on DataFromReader [#2121](https://github.com/gin-gonic/gin/pull/2121)

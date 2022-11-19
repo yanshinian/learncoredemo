@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"learncoredemo/framework"
-	"learncoredemo/framework/middleware"
+	"github.com/yanshinian/learncoredemo/framework/gin"
+	"github.com/yanshinian/learncoredemo/framework/middleware"
 	"log"
 	"net/http"
 	"os"
@@ -14,8 +14,8 @@ import (
 )
 
 func main() {
-	core := framework.NewCore()
-	core.Use(middleware.Recovery())
+	core := gin.New()
+	core.Use(gin.Recovery())
 	core.Use(middleware.Cost())
 	registerRouter(core)
 	server := &http.Server{
